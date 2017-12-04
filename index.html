@@ -972,7 +972,7 @@
 		var defaultButton2;
 	
         var year_str="2015";
-		var dependent_str = "independent"; 
+		var dependent_str = "Independent"; 
 		var ind_code = "index21"
 
 		var industry_data= [["index11","Agriculture, Forestry, Fishing and Hunting"],
@@ -1234,6 +1234,7 @@
                                   
 								d3.csv("h1b_"+year+"_"+dependent+"_top5.csv", function(data_t){
 	 								    // choose the industry maximum and minimum median wages for barplots
+
 	 								    var max_wage = d3.max(data_t,function(d) { if(d.industry==code){return +d.median_wage;} });
 					                    var min_wage = d3.min(data_t,function(d) { if(d.industry==code){return +d.median_wage;} });
 	 									
@@ -1290,7 +1291,7 @@
 
 											
                                           
-											console.log(wage_data.length);
+											
 
 
 
