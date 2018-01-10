@@ -551,7 +551,7 @@
 		   // add instruction
 		   first.append("text")
 		     .attr("fill","steelblue")
-             .attr("x", 1.15*w/2)
+             .attr("x", 1.13*w/2)
              .attr("y", 8*h/20)
              .attr("font-size","20")
              .text("Click inside the country circle to learn more");	 
@@ -1229,10 +1229,17 @@
  					 .attr("x",x0+2*bHeight)
  					 .attr("fill",'rgb(96,96,96)')
  					 .text(function(d) {return d;}) 
+        // instruction
+         first.append("text")
+		     .attr("fill","steelblue")
+             .attr("x", 10)
+             .attr("y", 620)
+             .attr("font-size","20")
+             .text("Click inside the country circle to learn more");
 
  		// median wage circle legend
 		var legend_wage = second.append("g")
-		                   .attr("transform","translate(10,620)");
+		                   .attr("transform","translate(10,650)");
 		  
 
 
