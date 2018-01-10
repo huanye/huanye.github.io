@@ -842,16 +842,16 @@
                                       			  .style("top",y+"px")
 									
 									tooltip.select("#year")
-									   .text("year:  20"+year)
+									   .text("Year:  20"+year)
 									
 									tooltip.select("#country")
-									   .text("country of origin: "+country)
+									   .text("Country of Origin: "+country)
 									
 									tooltip.select("#state")
-									   .text("state of worksite: "+d.properties.name)
+									   .text("Worksite State: "+d.properties.name)
 									
 									tooltip.select("#value")
-									  .text("number of applications:  "+d.properties[country])
+									  .text("Number of Applications:  "+d.properties[country])
 									
 									d3.select("#tooltip").classed("hidden",false);
 									  	
