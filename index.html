@@ -139,7 +139,7 @@
 						      .attr("transform","translate(20,50)")
 
 		    // button labels
-			var labels= ['2011','2012','2013','2014','2015','2016','2017','ANIMATION'];
+			var labels= ['2011','2012','2013','2014','2015','2016','2017','PLAY FROM START'];
 
 			//groups for each button (which will hold a rect and text)
 			var buttonGroups= allButtons.selectAll("g.button")
@@ -279,7 +279,7 @@
             .attr("class","buttonRect")
             .attr("width",function(d,i){
             	          if(i==7)
-            	          	 return bWidth+60;
+            	          	 return bWidth+120;
             	          	else
             	             return bWidth;
             	     })
